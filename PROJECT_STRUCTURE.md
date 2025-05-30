@@ -1,0 +1,127 @@
+# Project Structure: Boychild Empowerment Kenya Website
+
+```
+index.html
+LICENSE
+README.md
+assets/
+  css/
+    all.min.css
+    animate.css
+    bootstrap.min.css
+    magnific-popup.css
+    meanmenu.css
+    nice-select.css
+    style.css
+    swiper-bundle.min.css
+  images/
+    about-image1.jpg
+    about-image2.jpg
+    bcek-favicon.jpeg
+    favicon.png
+    preloader.svg
+    slideshow1.jpg
+    slideshow2.jpg
+    slideshow3.jpg
+    slideshow4.jpg
+    slideshow5.jpg
+    about/
+      about-image1.jpg
+      about-image2.png
+      about-info.png
+      about-two-image1.jpg
+    banner/
+      hero.png
+      hero1.png
+    blog/
+      blog-image1.jpg
+      blog-image2.jpg
+      blog-image3.jpg
+      blog-image4.jpg
+      blog-image5.jpg
+      blog-image6.jpg
+      blog-single-image1.jpg
+      blog-single-sm1.jpg
+      blog-single-sm2.jpg
+      comment-image1.png
+      comment-image2.png
+      post-sm1.png
+      post-sm2.png
+      post-sm3.png
+    brand/
+      brand-image1.png
+      brand-image2.png
+      brand-image3.png
+      brand-image4.png
+      brand-image5.png
+    cause/
+      boy-in-school.jpeg
+      cause-image1.jpg
+      cause-image2.jpg
+      cause-image3.jpg
+      cause-image4.jpg
+      cause-image5.jpg
+      cause-image6.jpg
+      cause-single-image.jpg
+      no-drugs.jpg
+      street-boys.jpeg
+    donate/
+      donate-image1.jpg
+    event/
+      event-image1.jpg
+      event-image2.jpg
+      event-image3.jpg
+      event-image4.jpg
+      event-single-image.jpg
+      impact1.jpg
+      impact2.jpg
+      impact3.jpg
+      impact4.jpg
+      impact5.jpg
+      impact6.jpg
+      impact7.jpg
+    faq/
+      boychild.png
+      faq-image1.jpg
+    footer/
+      ...
+    icon/
+      ...
+    logo/
+    menu/
+    project/
+    shape/
+    team/
+    testimonial/
+  js/
+    bootstrap.min.js
+    jquery-3.7.1.min.js
+    jquery.counterup.min.js
+    jquery.waypoints.js
+    magnific-popup.min.js
+    meanmenu.js
+    nice-select.min.js
+    script.js
+    swiper-bundle.min.js
+    wow.min.js
+  webfonts/
+    fa-brands-400.ttf
+    fa-brands-400.woff
+    fa-duotone-900.ttf
+    fa-duotone-900.woff
+    fa-light-300.ttf
+    fa-light-300.woff
+    fa-regular-400.ttf
+    fa-regular-400.woff
+    fa-solid-900.ttf
+    fa-solid-900.woff
+    fa-thin-100.ttf
+    fa-thin-100.woff
+    fa-v4compatibility.ttf
+    fa-v4compatibility.woff
+```
+
+- `index.html`: Main website HTML file
+- `LICENSE`: Project license (MIT)
+- `README.md`: Project overview and instructions
+- `assets/`: All static assets (CSS, JS, images, fonts, etc.)

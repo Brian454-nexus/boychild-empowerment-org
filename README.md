@@ -23,12 +23,12 @@ This is the official website for Boychild Empowerment Kenya (BCEK), a non-profit
 ### Running Locally
 
 1. Clone the repository or download the project files.
-2. Open `index-2-one-page.html` in your browser to view the site.
+2. Open `index.html` in your browser to view the site.
 3. For development, use a local server (e.g., [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) for VS Code) for best results with assets and scripts.
 
 ### File Structure
 
-- `index-2-one-page.html` — Main HTML file
+- `index.html` — Main HTML file
 - `assets/` — Contains all CSS, JS, images, and fonts
 
 ## Contributing
