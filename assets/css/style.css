@@ -4139,3 +4139,71 @@ input {
 }
 
 /* 8. Utility: Animate underline on scroll (JS required) */
+
+/* --- HERO SECTION MOBILE FIXES --- */
+@media (max-width: 600px) {
+  .banner-area {
+    padding-top: 80px !important;
+    padding-bottom: 80px !important;
+    background-position: center top !important;
+    background-size: cover !important;
+    min-height: 420px !important;
+  }
+  .banner__content {
+    max-width: 98vw !important;
+    padding: 0 2vw !important;
+  }
+  .banner__content h2 {
+    font-size: 2.1rem !important;
+    line-height: 1.15 !important;
+    word-break: break-word;
+  }
+  .banner__content h3 {
+    font-size: 1.2rem !important;
+    line-height: 1.1 !important;
+  }
+  .banner__content span {
+    font-size: 1.1rem !important;
+    line-height: 1.1 !important;
+  }
+}
+
+/* --- SLIDESHOW CONTAINER HEIGHT (CAUSES, ETC) --- */
+@media (max-width: 600px) {
+  .cause__image.image,
+  .swiper-slide .image,
+  .project__item .image {
+    min-height: 220px !important;
+    aspect-ratio: 1.2/1 !important;
+    height: auto !important;
+    max-height: 60vw !important;
+    overflow: hidden;
+  }
+  .cause__image.image img,
+  .swiper-slide .image img,
+  .project__item .image img {
+    object-fit: cover !important;
+    width: 100% !important;
+    height: 100% !important;
+    min-height: 220px !important;
+    max-height: 60vw !important;
+  }
+}
+
+/* --- WORD FROM THE FOUNDER DOT OVERLAP FIX --- */
+@media (max-width: 600px) {
+  .boychild-quote-area svg:last-of-type {
+    margin-bottom: 32px !important;
+    display: block;
+    position: relative;
+    top: 0 !important;
+    left: 0 !important;
+    transform: none !important;
+  }
+  .founder-signature {
+    margin-bottom: 0 !important;
+    margin-top: 12px !important;
+    position: relative;
+    z-index: 2;
+  }
+}

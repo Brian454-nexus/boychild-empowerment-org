@@ -563,9 +563,9 @@
             >
               Transforming Boys 
               <br>
-              <span style="font-size: 3.5rem; line-height: 1.2; color: #b0b7c3;">To Responsible Men</span>
+              <span style="font-size: 3.5rem; line-height: 1.2; color: #fff;">To Responsible Men</span>
               <br>
-              <span style="font-size: 2.5rem; line-height: 1.2; color: #b0b7c3;">For a Better Future</span>
+              <span style="font-size: 2.5rem; line-height: 1.2; color: #fff;">For a Better Future</span>
             </h2>
             <div
               class="btn-one mt-45 wow fadeInUp"
@@ -2029,6 +2029,12 @@
         }
         animateSectionHeaders();
         window.addEventListener('scroll', animateSectionHeaders);
+      });
+    </script>
+    <script>
+      // Always scroll to the very top of the page on refresh (not just hero section)
+      window.addEventListener('DOMContentLoaded', function() {
+        window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
       });
     </script>
   </body>
