@@ -1,41 +1,9 @@
-/*-----------------------------------------------------------------
-
-Template Name:  Sadaka - Non Profit Charity HTML Template
-Author:  Gramentheme
-Author URI: https://themeforest.net/user/gramentheme/portfolio
-Developer: Kawser Ahmed Roni
-Version: 1.0.0
-Description: Sadaka - Non Profit Charity HTML Template
-
--------------------------------------------------------------------
-CSS TABLE OF CONTENTS
--------------------------------------------------------------------
-
-01. abstracts
-    1.01 --> mixins
-    1.02 --> variable
-
-02. base
-    2.01 --> typography
-    2.02 --> animation
-    2.03 --> responsive
-
-03. components
-    3.01 --> buttons
-    3.02 --> progress
-
-04. layout
-    4.01 --> header
-    4.02 --> banner
-    4.03 --> section
-    4.04 --> footer
-
-------------------------------------------------------------------*/
+/* Style.css */
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,1000&family=Quicksand:wght@300;400;500;600;700&display=swap");
 :root {
   --dm-sans: "DM Sans", sans-serif;
   --quicksand: "Quicksand", sans-serif;
-  --primary-color: #f74f22;
+  --primary-color: #1e90ff;
   --secondary-color: #252525;
   --sub-bg: #f2f2f2;
   --heading-color: #252525;
@@ -49,6 +17,8 @@ CSS TABLE OF CONTENTS
   --border-2px: 2px solid #eaecf0;
   --transition: all 0.4s ease-in-out;
   --shadow: 0px 4px 25px 0px #0000000f;
+  --heading-font: "Merriweather", serif;
+  --body-font: "Inter", Arial, sans-serif;
 }
 
 * {
@@ -4019,3 +3989,153 @@ input {
     padding: 8px 12px;
   }
 }
+
+/* === BCEK Custom Typography & Heading Animation Upgrades === */
+/* 1. Font system for headings and body/card text */
+
+/* 2. Campaigns (Cause) Cards: Use Inter for card titles/descriptions */
+#cause .cause__content,
+#cause .cause__content h4,
+#cause .cause__content h6,
+#cause .cause__content p,
+#cause .cause__content a {
+  font-family: var(--body-font) !important;
+  font-size: 1.08rem;
+  color: #1a2233;
+  letter-spacing: 0.01em;
+}
+#cause .cause__content h4 a {
+  font-size: 1.13rem;
+  font-weight: 700;
+  color: #1e3557;
+}
+
+/* 3. Team Section: Heading uses heading font */
+#team .section-header h2 {
+  font-family: var(--heading-font) !important;
+  font-weight: 800;
+  font-size: 2.3rem;
+  color: #1e3557;
+  letter-spacing: 0.01em;
+  margin-bottom: 0.7em;
+  line-height: 1.18;
+  text-shadow: 0 2px 12px #1e90ff11;
+  position: relative;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeSlideUp 1.1s cubic-bezier(0.4, 0, 0.2, 1) 0.1s forwards;
+}
+#team .section-header h2.animated::after {
+  width: 60px;
+}
+#team .section-header h2::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #1e90ff 60%, #63b3ff 100%);
+  border-radius: 2px;
+  margin: 0.4em auto 0 auto;
+  transition: width 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* 4. Milestone Timeline: Card descriptions use Inter */
+#milestone .year-content p,
+#milestone .year-content strong {
+  font-family: var(--body-font) !important;
+  font-size: 1.01rem;
+  color: #1a2233;
+  letter-spacing: 0.01em;
+}
+
+/* 5. Founder Section: Heading and quote text */
+#founder,
+#founder .section-header h2 {
+  font-family: var(--heading-font) !important;
+  font-weight: 800;
+  font-size: 2.3rem;
+  color: #1e3557;
+  letter-spacing: 0.01em;
+  margin-bottom: 0.7em;
+  line-height: 1.18;
+  text-shadow: 0 2px 12px #1e90ff11;
+  position: relative;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeSlideUp 1.1s cubic-bezier(0.4, 0, 0.2, 1) 0.1s forwards;
+}
+#founder .section-header h2.animated::after {
+  width: 60px;
+}
+#founder .section-header h2::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #1e90ff 60%, #63b3ff 100%);
+  border-radius: 2px;
+  margin: 0.4em auto 0 auto;
+  transition: width 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+}
+#founder .boychild-quote-area p,
+#founder .boychild-quote-area .founder-signature {
+  font-family: var(--body-font) !important;
+  font-size: 1.13rem;
+  color: #1a2233;
+  letter-spacing: 0.01em;
+}
+
+/* 6. Heading Animation: Fade/slide up and underline grow for all major section headers */
+.section-header h2 {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeSlideUp 1.1s cubic-bezier(0.4, 0, 0.2, 1) 0.1s forwards;
+  position: relative;
+}
+.section-header h2::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #1e90ff 60%, #63b3ff 100%);
+  border-radius: 2px;
+  margin: 0.4em auto 0 auto;
+  transition: width 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.section-header h2.animated::after {
+  width: 60px;
+}
+@keyframes fadeSlideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 7. Responsive font sizes for cards and headings */
+@media (max-width: 900px) {
+  #cause .cause__content,
+  #milestone .year-content p,
+  #founder .boychild-quote-area p {
+    font-size: 0.97rem;
+  }
+  .section-header h2,
+  #team .section-header h2,
+  #founder .section-header h2 {
+    font-size: 1.45rem;
+  }
+}
+@media (max-width: 600px) {
+  #cause .cause__content,
+  #milestone .year-content p,
+  #founder .boychild-quote-area p {
+    font-size: 0.91rem;
+  }
+  .section-header h2,
+  #team .section-header h2,
+  #founder .section-header h2 {
+    font-size: 1.13rem;
+  }
+}
+
+/* 8. Utility: Animate underline on scroll (JS required) */
